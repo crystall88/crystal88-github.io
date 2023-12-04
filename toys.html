@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <body>
+        @@include('blocks/header.html')
+        <audio autoplay>
+            <source    src="./img/music.mp3"   type="audio/mpeg"  >
+          </audio>
+        <main class="toys">
+            <section class="toys__nav container">
+                <h2 class="toys__nav-title">Toy for kids</h2>
+                <div class="home__list">
+                    <p class="home">Home</p>
+                    <img class="vector__img" src="../img/vectore-home.png" alt="#">
+                    <p class="products__catalog">Catalog</p>
+                    <img class="vector__img" src="../img/vectore-home.png" alt="#">
+                    <p class="toys__products">Toys</p>
+                </div>
+            </section>
+            <section class="filter">
+                <div class="filter__rage-group">
+                    <h3 class="filter__cost">cost</h3>
+                    <div>
+                        <input type="range" value="70" min="0" max="100" oninput="rangevalue.value=value"/>
+                    </div>
+                </div>
+                <!-- <div class="checkbox__color-list"> -->
+                <div class="filter__checkbox-color--list"> 
+                    <h4 class="color">color</h4>
+                    <div class="checkbox__color">
+                            <label class="label__checkbox">
+                                <input type="checkbox" class="toys__checkbox">
+                                <span class="custom__checkbox"></span>
+                                <p class="checkbox__color-text">Black</p>
+                            </label>
+                            <label class="label__checkbox">
+                                <input type="checkbox" class="toys__checkbox">
+                                <span class="custom__checkbox"></span>
+                                <p class="checkbox__color-text">Blue</p>
+                            </label>
+                            <label class="label__checkbox">
+                                <input type="checkbox" class="toys__checkbox">
+                                <span class="custom__checkbox"></span>
+                                <p class="checkbox__color-text">Green</p>
+                            </label>
+                            <label class="label__checkbox">
+                                <input type="checkbox" class="toys__checkbox">
+                                <span class="custom__checkbox"></span>
+                                <p class="checkbox__color-text">White</p>
+                            </label>
+                    </div>
+                </div>
+                <div class="filter__radio-shipping">
+                <h5>delivery</h5>
+                    <div class="filter__toys-radio">
+                       <label class="label__radio">
+                            <input type="radio" class="toys__radio-input">
+                            <span class="custom__radio"></span>
+                            <p>Free shipping</p>
+                        </label>
+                        <label class="label__radio" >
+                            <input type="radio" class="toys__radio-input">
+                            <span class="custom__radio"></span>
+                            <p>Fast shipping</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter__amount">
+                <h6 class="Amount">Amount</h6>
+                    <div class="filter__button-list">
+                        <button type="button" class="button__amount-item">0-5</button>
+                        <button type="button" class="button__amount">10-20</button>
+                        <button type="button" class="button__amount">20-50</button>
+                    </div>
+                </div>
+            @@include('blocks/button.html',{
+                'button': "apply",
+                'class' : "filter__button-apply" 
+               })
+            </section>
+                <div class="production container">
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-one.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-one.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/shark.png" alt="#">
+                        </picture>                        
+                        <p class="toys__name">SHARKY BEAN BAG CHAIR COVER</p>
+                        <p class="cost__production">$60.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-two.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-two.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/brass.png" alt="#">
+                        </picture>
+                        <p class="toys__name">BRASS DECO FRAMES</p>
+                        <p class="cost__production">$66.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-three.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-three.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/dress-blog.png" alt="#">
+                        </picture>
+                        <p class="toys__name">CIBO FULL APRON</p>
+                        <p class="cost__production">$60.00 USD</p></ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-four.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-four.png" media="(max-width: 768px)"> 
+                            <img class="production__img" src="../img/gatcha.png" alt="#">
+                        </picture>
+                        <p class="toys__name">GATCHA GATCHA GUMBALL MACHINE</p>
+                        <p class="cost__production">$56.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-five.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-five.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/candle.png" alt="#">
+                            </picture>
+                        <p class="toys__name">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                        <p class="cost__production">$29.00 USD</p>
+                    </ul>
+                    <ul class="product__list-item">
+                        <picture>
+                            <source srcset="../img/production__mobile-six.png" media="(max-width: 375px)">
+                            <source srcset="../img/production__tablet-six.png" media="(max-width: 768px)">
+                            <img class="production__img" src="../img/lamp.png" alt="#">
+                        </picture>
+                        <p class="toys__name">TANGLE SPINNING TEA LIGHT</p>
+                        <p class="cost__production">$56.00 USD</p>
+                    </ul>
+                </div>
+            @@include('blocks/pages.html')
+            @@include('blocks/footer.html')
+        </main>
+    </body>
+    <script src="js/app.js" defer></script>
+    <script src="/js/menu.js"></script>
+</body>
+</html>
